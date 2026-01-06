@@ -1,0 +1,20 @@
+# Object files
+*.o
+*.obj
+
+# Static library output
+libft.a
+
+# Executables
+a.out
+*.out
+*.exe
+
+# macOS
+.DS_Store
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+
