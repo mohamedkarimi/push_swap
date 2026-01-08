@@ -41,6 +41,7 @@ int main(int ac, char **av)
         free_stack(&stack_a);
         return (1);
     }
+    assign_indices(stack_a);
     if(is_sorted(stack_a))
     {
         free_stack(&stack_a);
