@@ -11,9 +11,9 @@ int	calculate_chunk_count(int size)
 	if (size <= 100)
 		return (4);
 	else if (size <= 500)
-		return (7);
+		return (8);
 	else
-		return (size / 20);
+		return (size / 45);
 }
 
 int	find_first_pos(t_stack *stack, int max_index)

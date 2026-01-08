@@ -21,19 +21,3 @@ void	assign_indices(t_stack *stack)
 		current = current->next;
 	}
 }
-
-void	update_positions(t_stack **stack)
-{
-	t_stack *current;
-	int pos;
-
-	current = *stack;
-	pos = 0;
-
-	while (current)
-	{
-		current->pos = pos;
-		pos++;
-		current = current->next;
-	}
-}

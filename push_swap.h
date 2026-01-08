@@ -54,7 +54,6 @@ void    ss(t_stack **stack_a, t_stack **stack_b);
 
 //algorithm
 void    assign_indices(t_stack *stack);
-void    update_positions(t_stack **stack);
 void    sort_three(t_stack **stack_a);
 void    sort_4_5_elements(t_stack **stack_a, t_stack **stack_b);
 void    sort_two(t_stack **stack_a);
