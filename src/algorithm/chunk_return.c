@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   chunk_return.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mokarimi <mokarimi@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/01/08 19:06:27 by mokarimi          #+#    #+#             */
+/*   Updated: 2026/01/08 19:06:44 by mokarimi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 static int	find_max_index_pos(t_stack *stack)
@@ -49,12 +61,12 @@ static void	rotate_b_to_top(t_stack **stack_b, int position)
 
 void	push_back_to_a(t_stack **stack_a, t_stack **stack_b)
 {
-	int max_pos;
+	int	max_pos;
+
 	while (*stack_b)
 	{
 		max_pos = find_max_index_pos(*stack_b);
 		rotate_b_to_top(stack_b, max_pos);
 		pa(stack_a, stack_b);
-		// *stack_b = (*stack_b)->next;
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: mokarimi <mokarimi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 15:04:33 by mokarimi          #+#    #+#             */
-/*   Updated: 2026/01/08 13:56:26 by mokarimi         ###   ########.fr       */
+/*   Updated: 2026/01/08 19:08:59 by mokarimi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,6 @@ static int	find_value_position(t_stack *stack, int value)
 static void	helper(t_stack **stack_a)
 {
 	int (min), (pos), (size);
-	
 	min = find_min_value(*stack_a);
 	pos = find_value_position(*stack_a, min);
 	size = stack_size(*stack_a);

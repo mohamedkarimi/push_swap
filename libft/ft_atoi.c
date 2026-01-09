@@ -6,7 +6,7 @@
 /*   By: mokarimi <mokarimi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 20:30:01 by mokarimi          #+#    #+#             */
-/*   Updated: 2025/10/25 18:11:23 by mokarimi         ###   ########.fr       */
+/*   Updated: 2026/01/08 21:02:26 by mokarimi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 long	ft_atoi(const char *str)
 {
 	size_t	i;
-	int	s;
+	int		s;
 	long	result;
 
 	i = 0;
@@ -34,11 +34,3 @@ long	ft_atoi(const char *str)
 	}
 	return (result * s);
 }
-/*
-int	main(void)
-{
-	char	str[] = "+ ";
-
-	printf("%ld", ft_atoi(str));
-}
-*/

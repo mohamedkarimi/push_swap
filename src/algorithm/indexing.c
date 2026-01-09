@@ -1,11 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   indexing.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mokarimi <mokarimi@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/01/08 19:07:43 by mokarimi          #+#    #+#             */
+/*   Updated: 2026/01/08 19:08:11 by mokarimi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 void	assign_indices(t_stack *stack)
 {
-	int	index;
+	int		index;
+	t_stack	*current;
+	t_stack	*checker;
 
-	t_stack *current; // L-ra9m li kan-7esbou lih l-index dialo daba
-	t_stack *checker; // L-3essas li kiy-douz 3la l-stack kamel bach y-9aren
 	current = stack;
 	while (current)
 	{

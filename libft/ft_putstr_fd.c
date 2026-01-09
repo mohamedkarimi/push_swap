@@ -6,7 +6,7 @@
 /*   By: mokarimi <mokarimi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 17:16:13 by mokarimi          #+#    #+#             */
-/*   Updated: 2025/10/24 17:16:14 by mokarimi         ###   ########.fr       */
+/*   Updated: 2026/01/08 21:02:11 by mokarimi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,3 @@ void	ft_putstr_fd(char *s, int fd)
 		s++;
 	}
 }
-
-// int	main(void)
-// {
-// 	ft_putstr_fd("pa\n",1);
-// }
-	

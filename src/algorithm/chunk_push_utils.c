@@ -1,11 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   chunk_push_utils.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mokarimi <mokarimi@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/01/08 19:05:46 by mokarimi          #+#    #+#             */
+/*   Updated: 2026/01/09 10:35:56 by mokarimi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
-/*
- * Recommended values (tuned for performance):
- *   Size <= 100:  5 chunks  (chunk_size = 20)
- *   Size <= 500:  11 chunks (chunk_size ≈ 45)
- *   Size > 500:   sqrt(size) or size/20
- */
 int	calculate_chunk_count(int size)
 {
 	if (size <= 100)
@@ -64,19 +70,11 @@ int	get_best_pos(t_stack *stack, int max_index)
 	else
 		return (last);
 }
-/**
- * #brief Rotate stack to bring element at position to top
- *
- * Chooses shortest rotation direction:
- *   - If position <= size/2: use ra (rotate up)
- *   - If position > size/2: use rra (rotate down)
- *
- * #param stack_a Pointer to stack A
- * #param position Position of element to bring to top
- */
+
 void	rotate_a_to_top(t_stack **stack_a, int position)
 {
-	int size;
+	int	size;
+
 	size = stack_size(*stack_a);
 	if (position <= size / 2)
 	{
