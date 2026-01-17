@@ -6,7 +6,7 @@
 /*   By: mokarimi <mokarimi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 20:57:59 by mokarimi          #+#    #+#             */
-/*   Updated: 2026/01/08 20:59:16 by mokarimi         ###   ########.fr       */
+/*   Updated: 2026/01/16 11:46:19 by mokarimi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ typedef struct s_stack
 {
 	int				value;
 	int				index;
-	int				pos;
 	struct s_stack	*next;
 }					t_stack;
 
@@ -65,11 +64,6 @@ void				sort_three(t_stack **stack_a);
 void				sort_4_5_elements(t_stack **stack_a, t_stack **stack_b);
 void				sort_two(t_stack **stack_a);
 
-int					calculate_chunk_count(int size);
-int					find_first_pos(t_stack *stack, int max_index);
-int					find_last_pos(t_stack *stack, int max_index);
-int					get_best_pos(t_stack *stack, int max_index);
-void				rotate_a_to_top(t_stack **stack_a, int position);
 void				push_chunks_to_b(t_stack **stack_a, t_stack **stack_b);
 void				push_back_to_a(t_stack **stack_a, t_stack **stack_b);
 

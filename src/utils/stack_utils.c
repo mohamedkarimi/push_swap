@@ -6,7 +6,7 @@
 /*   By: mokarimi <mokarimi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 20:49:17 by mokarimi          #+#    #+#             */
-/*   Updated: 2026/01/08 20:49:28 by mokarimi         ###   ########.fr       */
+/*   Updated: 2026/01/16 11:43:23 by mokarimi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ t_stack	*stack_new(int value)
 		return (NULL);
 	new_node->value = value;
 	new_node->index = -1;
-	new_node->pos = -1;
 	new_node->next = NULL;
 	return (new_node);
 }

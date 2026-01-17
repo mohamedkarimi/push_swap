@@ -6,7 +6,7 @@
 /*   By: mokarimi <mokarimi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 20:50:00 by mokarimi          #+#    #+#             */
-/*   Updated: 2026/01/08 20:56:49 by mokarimi         ###   ########.fr       */
+/*   Updated: 2026/01/16 16:20:08 by mokarimi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,6 @@ int	main(int ac, char **av)
 		free_stack(&stack_a);
 		return (1);
 	}
-	assign_indices(stack_a);
 	if (is_sorted(stack_a))
 	{
 		free_stack(&stack_a);
